@@ -1,6 +1,10 @@
+novoArr = []
 menor = 1
 maior = 1000
 escolha = int(input("Digite um número entre 1 e 1000: "))
+
+for i in range (1, 1001):
+    novoArr.append(i)
 
 if escolha < menor or escolha > maior:
     print(f"Erro: O número {escolha} não está entre {menor} e {maior}.")
